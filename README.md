@@ -14,6 +14,7 @@ The main features of NewSQL databases are:
 - High availability due to the database replication mechanism.
 - A built-in crash recovery mechanism delivers fault tolerance and minimizes downtime.
 
+
 |Feature|SQL|NoSQL|NewSQL|
 | -------- | ------- |-------- | ------- |
 |Schema|Relational (table)|Schema-free|Both|
