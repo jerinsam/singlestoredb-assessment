@@ -1,0 +1,4 @@
+URL:https://github.com/memsql/singlestore-odbc-connector/releases/tag/v1.1.5
+Downlaod : Required package
+
+In this solution, ODBC Driver for windows is downloaded and installed.
