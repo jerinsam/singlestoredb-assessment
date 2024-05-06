@@ -1,19 +1,21 @@
-###### Got to Confluent Github page and Download Docker Compose File #######
-url : https://github.com/confluentinc/cp-all-in-one/tree/7.5.0-post
-Folder : cp-all-in-one-community
+##### Configure Docker for SingleStore DB ########
 
-Download Docker Compose Yaml File
+1. Create free account on SingleStore DB Portal
 
+2. Spin up a free DB.
 
-To connect to services in Docker, refer to the following ports.
-This may change, check git Readme file for latest updates and also double check docker compose file: 
- 
+3. In portal - https://portal.singlestore.com/ , Go to Org and Self Managed License. 
+	
+4. Click on Install SingleStore.
 
-ZooKeeper: 8087
-Kafka broker: 8084, 8085
-Kafka broker JMX: 8086
-Confluent Schema Registry: 8081
-Kafka Connect: 8083
-ksqlDB: 8088
-Confluent REST Proxy: 8082
-Redis : 8089 #Updated Docker Compose file to add Redis Service as well
+5. Select Free Docker Container and click on Windows then Next.
+
+6. Download and Start SingleStore DB Docker Image, Code will be available on the Portal along with LICENSE_KEY. ** Make sure Docker Desktop is installed.
+
+7. Refer Docker Commands available in main folder as Reference to download and start the singlestore db image
+
+8. Use MYSQL Client to connect or can also be accessible through "http://localhost:8080/connect" 
+	8.1. Port can also be changed in Docker's Property. Make sure to use the correct port while connecting to localhost.
+
+9. User Name will be root and password as mentioned in Docker Command's Property.
+

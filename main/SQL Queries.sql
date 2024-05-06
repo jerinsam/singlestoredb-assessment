@@ -1,0 +1,3 @@
+-- create database test_ss;
+-- use test_ss;
+-- create table test_dataload (id int , name varchar(100));
