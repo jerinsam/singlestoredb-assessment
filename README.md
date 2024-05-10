@@ -7,6 +7,8 @@ DATA ENGINEERING SOLUTIONS - Assess SingleStoreDB
 
 Since Singlestore is compatible with MYSQL wire protocol (i.e. Its similar to MYSQL, Connections and Syntax etc.) therefore SingleStore will be assessed further.
 
+In this POC, a small python code is cretaed to push data from SQL Server to SingleStore DB to test the connectivity
+
 **Definition and Differences** : 
 
 SingleStore is a NewSQL database, provides Low-latency queries i.e. Millisecond query performance.
