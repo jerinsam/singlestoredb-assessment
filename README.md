@@ -1,5 +1,3 @@
-# Assess SingleStore DB
-DATA ENGINEERING SOLUTIONS - Assess SingleStoreDB
 
 **Problem Statement** : A reporting app where, based on user selection, some complex calculations will be performed and then will be shown on the UI. SQL Server is used as the backend DB which is processing 7 + 5 Million rows in ~10-15 seconds. To keep users engaged on the app, data should be processed in sub seconds. 
 
@@ -14,7 +12,7 @@ In this POC, a small python code is cretaed to push data from SQL Server to Sing
 SingleStore is a NewSQL database, provides Low-latency queries i.e. Millisecond query performance.
 NewSQL is a term that combines SQL and NoSQL. NewSQL is a unique database system that combines ACID compliance with horizontal scaling. The database system strives to keep the best of both worlds i.e OLTP-based transactions and the high performance of NoSQL combine in a single solution.
 
-### NewSQL Database Features
+##### NewSQL Database Features
 The main features of NewSQL databases are:
 
 - In-memory storage and data processing supply fast query results.
@@ -35,3 +33,13 @@ The main features of NewSQL databases are:
 |Distributed|No|Yes|Yes|
 |High availability|Custom|Auto|Built-in|
 |Queries|Low complexity queries|High complexity queries|Both|
+
+**Implementation** : 
+In this POC, Data is pushed from SQL Server to SingleStore DB, Following Services are used:
+    1. SingleStoreDB docker container - Use /install_and_config/ folder to understand the docker container license and setup.
+    2. SQL Server - Installed in Windows, Developer Edition is free to use.
+    3. Python
+
+/main/Docker Image Setup.bash - Can be used to get the script used to spin-up the SingleStoreDB docker container.
+/main/SQL Queries.sql - SQL Server Tables and SingleStoreDB table creation script.
+/main/push-data-sqlserver-singlestore.py - Python script to read table from SQL Server and push it to SingleStoreDB. SingleStoreDB uses same protocol used by MySQL, therefore data push to SingleStoreDB will be same as MySQL. 
