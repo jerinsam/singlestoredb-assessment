@@ -41,6 +41,8 @@ In this POC, Data is pushed from SQL Server to SingleStore DB, Following Service
 - SQL Server - Installed in Windows, Developer Edition is free to use.
 - Python
 
-/main/Docker Image Setup.bash - Can be used to get the script used to spin-up the SingleStoreDB docker container.
-/main/SQL Queries.sql - SQL Server Tables and SingleStoreDB table creation script.
-/main/push-data-sqlserver-singlestore.py - Python script to read table from SQL Server and push it to SingleStoreDB. SingleStoreDB uses same protocol used by MySQL, therefore data push to SingleStoreDB will be same as MySQL. 
+Steps : 
+
+- /main/Docker Image Setup.bash - Can be used to get the script used to spin-up the SingleStoreDB docker container.
+- /main/SQL Queries.sql - SQL Server Tables and SingleStoreDB table creation script.
+- /main/push-data-sqlserver-singlestore.py - Python script to read table from SQL Server and push it to SingleStoreDB. SingleStoreDB uses same protocol used by MySQL, therefore data push to SingleStoreDB will be same as MySQL. 
