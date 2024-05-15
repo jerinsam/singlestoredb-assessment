@@ -36,9 +36,9 @@ The main features of NewSQL databases are:
 
 **Implementation** : 
 In this POC, Data is pushed from SQL Server to SingleStore DB, Following Services are used:
-    1. SingleStoreDB docker container - Use /install_and_config/ folder to understand the docker container license and setup.
-    2. SQL Server - Installed in Windows, Developer Edition is free to use.
-    3. Python
+        1. SingleStoreDB docker container - Use /install_and_config/ folder to understand the docker container license and setup.
+        2. SQL Server - Installed in Windows, Developer Edition is free to use.
+        3. Python
 
 /main/Docker Image Setup.bash - Can be used to get the script used to spin-up the SingleStoreDB docker container.
 /main/SQL Queries.sql - SQL Server Tables and SingleStoreDB table creation script.
