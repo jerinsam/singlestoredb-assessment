@@ -1,13 +1,15 @@
 
-**Problem Statement** : A reporting app where, based on user selection, some complex calculations will be performed and then will be shown on the UI. SQL Server is used as the backend DB which is processing 7 + 5 Million rows in ~10-15 seconds. To keep users engaged on the app, data should be processed in sub seconds. 
+#### Problem Statement
+A reporting app where, based on user selection, some complex calculations will be performed and then will be shown on the UI. SQL Server is used as the backend DB which is processing 7 + 5 Million rows in ~10-15 seconds. To keep users engaged on the app, data should be processed in sub seconds. 
 
-**Solutions** : While looking for other DB services to speed up data processing, NewSQL concept emerged into the assessment - Apache Durby, SingleStore DB, VoltDB etc. are some of the examples of New SQL.
+#### Solutions
+While looking for other DB services to speed up data processing, NewSQL concept emerged into the assessment - Apache Durby, SingleStore DB, VoltDB etc. are some of the examples of New SQL.
 
 Since Singlestore is compatible with MYSQL wire protocol (i.e. Its similar to MYSQL, Connections and Syntax etc.) therefore SingleStore will be assessed further.
 
 In this POC, a small python code is cretaed to push data from SQL Server to SingleStore DB to test the connectivity
 
-**Definition and Differences** : 
+#### Definition and Differences
 
 SingleStore is a NewSQL database, provides Low-latency queries i.e. Millisecond query performance.
 NewSQL is a term that combines SQL and NoSQL. NewSQL is a unique database system that combines ACID compliance with horizontal scaling. The database system strives to keep the best of both worlds i.e OLTP-based transactions and the high performance of NoSQL combine in a single solution.
@@ -34,7 +36,7 @@ The main features of NewSQL databases are:
 |High availability|Custom|Auto|Built-in|
 |Queries|Low complexity queries|High complexity queries|Both|
 
-**Implementation** : 
+#### Implementation
 In this POC, Data is pushed from SQL Server to SingleStore DB, Following Services are used:
 
 - SingleStoreDB docker container - Use /install_and_config/ folder to understand the docker container license and setup.
