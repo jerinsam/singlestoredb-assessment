@@ -39,12 +39,18 @@ The main features of NewSQL databases are:
 #### Implementation - 
 In this POC, Data is pushed from SQL Server to SingleStore DB, Following Services are used:
 
-- SingleStoreDB docker container - Use /install_and_config/ folder to understand the docker container license and setup.
+- Git Configuration - Use **/install_and_config/1.Add Git Repo in Local.md** for reference.
+- SingleStoreDB docker container - Use **/install_and_config/2.Get Docker Compose Script.md** to understand the docker container license and setup of SingleStoreDB.
+- SinglestoreDB ODBC and Python Connectivity - Use **//install_and_config/3.SingleStore ODBC Connector.md** to understand the setup of SingleStoreDB ODBC connector and python connectivity.
 - SQL Server - Installed in Windows, Developer Edition is free to use.
 - Python
 
-Steps : 
+#### Script Execution Steps : 
 
-- /main/Docker Image Setup.bash - Can be used to get the script used to spin-up the SingleStoreDB docker container.
-- /main/SQL Queries.sql - SQL Server Tables and SingleStoreDB table creation script.
-- /main/push-data-sqlserver-singlestore.py - Python script to read table from SQL Server and push it to SingleStoreDB. SingleStoreDB uses same protocol used by MySQL, therefore data push to SingleStoreDB will be same as MySQL. 
+- **/main/Docker Image Setup.bash** 
+    - Script used to spin-up the SingleStoreDB docker container, change license key by referencing the key generated during the setup of SingleStoreDB. Refer :  **/install_and_config/2.Get Docker Compose Script.md**
+- **/main/SQL Queries.sql** 
+    - SQL Server Tables and SingleStoreDB table creation script.
+- **/main/push-data-sqlserver-singlestore.py** 
+    - Python script to read table from SQL Server and push it to SingleStoreDB. SingleStoreDB uses same protocol used by MySQL, therefore data push to SingleStoreDB will be same as MySQL. 
+    - **/main/test/test_connection.py** : Test connection to SingleStoreDB using python. This is used to test the connection before pushing data.
