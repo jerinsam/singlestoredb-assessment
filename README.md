@@ -48,7 +48,7 @@ In this POC, Data is pushed from SQL Server to SingleStore DB, Following Service
 #### Script Execution Steps : 
 
 - **/main/Docker Image Setup.bash** 
-    - Script used to spin-up the SingleStoreDB docker container, change license key by referencing the key generated during the setup of SingleStoreDB. Refer :  **/install_and_config/2.Get Docker Compose Script.md**
+    - Script used to spin-up the SingleStoreDB docker container, change license key by referencing the key generated during the setup of SingleStoreDB (**Refer: /install_and_config/2.Get Docker Compose Script.md** )
 - **/main/SQL Queries.sql** 
     - SQL Server Tables and SingleStoreDB table creation script.
 - **/main/push-data-sqlserver-singlestore.py** 
